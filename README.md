@@ -16,7 +16,7 @@ Purpose usage, detailed explanation what is does and any other information you w
 | --------------------------------- | ------------------------------------------- | ----------------------------------------------------------- |
 | It will store players information | PigDice(players).toEqual([names], [scores]) | function PigDice() { this.players = []; this.scores = []; } |
 
-It will display random order of numbers 1-6 on click/"roll" | PigDice(roll).toEqual()
+| It will add players to Pig Dice game | PigDice(add player).toEqual([new player added]) | PigDice.prototype.addPlayer |
 
 ### Describe: Player()
 
@@ -24,15 +24,15 @@ It will display random order of numbers 1-6 on click/"roll" | PigDice(roll).toEq
 | ---- | ------ | ---- |
 
 
-It will take in user inputted name| Player(name).toEqual("name"); | function Player(name, score) { this.name = name; this score = score} |
+| It will take in user inputted name| Player(name).toEqual("name"); | function Player(name, score) { this.name = name; this score = score} |
 
-It will display which players turn it is to "roll" | Player(players).toEqual("It is Player One's turn"); |
+| It will display which players turn it is to "roll" | Player(players).toEqual("It is Player One's turn"); | |
 
-It will display random order of numbers 1-6 when player clicks "roll" | Player(roll).toEqual(random 1-6) | Player.prototype.roll |
+| It will display random order of numbers 1-6 when player clicks "roll" | Player(roll).toEqual(random 1-6) | Player.prototype.roll |
 
-It will add 0 to player's score if number displayed is 1 | Player(roll[1]).toEqual(0) |
+| It will add 0 to player's score if number displayed is 1 | Player(roll[1]).toEqual(0) | |
 
-It will add numbers displayed to players score except if player rolls a 1 | Score(2-6).toEqual(2-6) |
+| It will add numbers displayed to players score except if player rolls a 1 | Score(2-6).toEqual(2-6) | |
 
 ### Describe: Score()
 
@@ -40,7 +40,7 @@ It will add numbers displayed to players score except if player rolls a 1 | Scor
 | ---- | ------ | ---- |
 
 
-It will add numbers displayed to players score except if player rolls a 1 | Score(2-6).toEqual(2-6) |
+It will add numbers displayed to players score except if player rolls a 1 | Score(2-6).toEqual(2-6) | //idk if i need this
 
 ## Setup/Installation Requirements
 
