@@ -1,4 +1,4 @@
-# Application Name
+# Pig Dice
 
 #### Description of application, date-2020
 
@@ -10,11 +10,37 @@ Purpose usage, detailed explanation what is does and any other information you w
 
 ## Specifications
 
-### Describe: functionName()
+### Describe: PigDice()
 
-| Test | Expect |
-| ---- | ------ |
+| Test                              | Expect                                      | Code                                                        |
+| --------------------------------- | ------------------------------------------- | ----------------------------------------------------------- |
+| It will store players information | PigDice(players).toEqual([names], [scores]) | function PigDice() { this.players = []; this.scores = []; } |
 
+It will display random order of numbers 1-6 on click/"roll" | PigDice(roll).toEqual()
+
+### Describe: Player()
+
+| Test | Expect | Code |
+| ---- | ------ | ---- |
+
+
+It will take in user inputted name| Player(name).toEqual("name"); | function Player(name, score) { this.name = name; this score = score} |
+
+It will display which players turn it is to "roll" | Player(players).toEqual("It is Player One's turn"); |
+
+It will display random order of numbers 1-6 when player clicks "roll" | Player(roll).toEqual(random 1-6) | Player.prototype.roll |
+
+It will add 0 to player's score if number displayed is 1 | Player(roll[1]).toEqual(0) |
+
+It will add numbers displayed to players score except if player rolls a 1 | Score(2-6).toEqual(2-6) |
+
+### Describe: Score()
+
+| Test | Expect | Code |
+| ---- | ------ | ---- |
+
+
+It will add numbers displayed to players score except if player rolls a 1 | Score(2-6).toEqual(2-6) |
 
 ## Setup/Installation Requirements
 
