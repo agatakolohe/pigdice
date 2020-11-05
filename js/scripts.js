@@ -1,6 +1,6 @@
 function PigDice() {
   this.players = [];
-  this.scores = [];
+  this.totalScores = [];
   this.playerId = 0;
 }
 
@@ -13,18 +13,19 @@ PigDice.prototype.assignID = function () {
   return this.playerId;
 };
 
-function Player(name, score) {
+function Player(name) {
   this.name = name;
-  this.score = score;
+  this.roundScore = 0;
+  this.totalScore = 0;
 }
-
-Player.prototype.playerTurn = function () {
-  // not working
-  players.forEach(function (score) {
-    if (score === 0) {
-      return "It is not your turn";
-    } else {
-      return "It is your turn";
-    }
-  });
-};
+// Not working
+// Player.prototype.playerTurn = function () {
+//
+//   players.forEach(function (score) {
+//     if (score === 0) {
+//       return "It is not your turn";
+//     } else {
+//       return "It is your turn";
+//     }
+//   });
+// };
